@@ -1,0 +1,10 @@
+{
+    "cible": "127.0.0.1",
+    "date_generation": "2026-05-17 19:32:54.561393",
+    "duree_execution_secondes": 0.0,
+    "metriques": {
+        "ports_analyses": 3,
+        "ports_ouverts": 0
+    },
+    "resultats": []
+}
