@@ -1,7 +1,4 @@
 data/
 __pycache__/
 *.json
-.DS_Store
-
-# Exclusion du dossier temporaire Windows / Proton Drive
-\$Temp/
+.DS_Store 
