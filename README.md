@@ -14,12 +14,12 @@ La suite du projet consiste à optimiser ce scanner en y intégrant le multi-thr
 L'environnement est structuré selon les standards d'isolation de l'ingénierie logicielle :
 
 * `src/` : Contient le code source modulaire de l'application (`network_scanner.py`).
-* `data/` : Zone étanche locale dédiée à la consignation des rapports d'audit (fichiers `.json`), exclue du suivi de version pour prévenir toute fuite de données (*data leak*).
+* `data/` : Zone étanche locale dédiée à la consignation des rapports d'audit (fichiers `.json`), exclue du suivi de version **pour empêcher toute fuite de données**.
 * `.gitignore` : Configuration des filtres d'exclusion pour Git.
 
 ## Fonctionnalités Majeures
 1. **Gestion Dynamique des Arguments (CLI) :** Paramétrage complet via le terminal grâce au module `argparse`.
-2. **Optimisation I/O Bound :** Utilisation de `ThreadPoolExecutor` pour la parallélisation des requêtes de connexion.
+2. **Optimisation I/O Bound : Utilisation de ThreadPoolExecutor pour paralléliser les requêtes de connexion et accélérer le scan.
 3. **Capture de Bannières (Banner Grabbing) :** Tentative de stimulation applicative pour identifier les versions des services distants.
 4. **Fermeture Sécurisée des Ressources :** Implémentation de gestionnaires de contexte (`with`) sur les sockets TCP pour éviter les fuites de descripteurs de fichiers (*file descriptor leaks*).
 
