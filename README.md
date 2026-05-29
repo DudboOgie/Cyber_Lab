@@ -1,7 +1,14 @@
 # Laboratoire d'Audit Réseau - Scanner TCP Multi-threadé
 
 ## Description du Projet
-Ce projet implémente un outil d'audit réseau unifié permettant de cartographier la couche Transport (TCP) d'une cible spécifiée. Développé de manière modulaire, il intègre une logique de parallélisation pour optimiser les performances de scan, une brique de capture de bannières (*banner grabbing*) pour identifier les services applicatifs, et un système d'exportation étanche des artefacts.
+
+L'objectif de ce projet est de concevoir un scanner de ports TCP fonctionnel en Python. 
+Ce script permet d'analyser une adresse IP ou un nom de domaine cible afin d'identifier les ports ouverts et de déterminer quels services y sont potentiellement actifs.
+
+Dans un premier temps, nous avons configuré l'infrastructure réseau pour tester le script en toute sécurité. 
+Nous avons ensuite écrit le code en utilisant la bibliothèque `socket` de Python pour tenter des connexions sur une plage de ports définie.
+
+La suite du projet consiste à optimiser ce scanner en y intégrant le multi-threading afin d'accélérer la vitesse d'exécution des scans, et à ajouter une gestion des erreurs plus robuste pour traiter les cas de timeout ou de ports filtrés.
 
 ## Architecture du Laboratoire
 L'environnement est structuré selon les standards d'isolation de l'ingénierie logicielle :
