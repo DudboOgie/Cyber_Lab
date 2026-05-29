@@ -14,7 +14,7 @@ La suite du projet consiste à optimiser ce scanner en y intégrant le multi-thr
 L'environnement est structuré selon les standards d'isolation de l'ingénierie logicielle :
 
 * `src/` : Contient le code source modulaire de l'application (`network_scanner.py`).
-* `data/` : Zone étanche locale dédiée à la consignation des rapports d'audit (fichiers `.json`), exclue du suivi de version **pour empêcher toute fuite de données**.
+* `data/` : Zone étanche locale dédiée à la consignation des rapports d'audit (fichiers `.json`), exclue du suivi de version   **  pour empêcher toute fuite de données**.
 * `.gitignore` : Configuration des filtres d'exclusion pour Git.
 
 ## Fonctionnalités Majeures
