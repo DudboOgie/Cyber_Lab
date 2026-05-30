@@ -18,10 +18,10 @@ L'environnement est structuré selon les standards d'isolation de l'ingénierie 
 * `.gitignore` : Configuration des filtres d'exclusion pour Git.
 
 ## Fonctionnalités Majeures
-1. **Gestion Dynamique des Arguments (CLI) :** Paramétrage complet via le terminal grâce au module `argparse`.
+1. **Gestion Dynamique des Arguments (CLI) : Paramétrage complet via le terminal grâce au module argparse.
 2. **Optimisation I/O Bound : Utilisation de ThreadPoolExecutor pour paralléliser les requêtes de connexion et accélérer le scan.
-3. **Capture de Bannières (Banner Grabbing) :** Tentative de stimulation applicative pour identifier les versions des services distants.
-4. **Fermeture Sécurisée des Ressources :** Implémentation de gestionnaires de contexte (`with`) sur les sockets TCP pour éviter les fuites de descripteurs de fichiers (*file descriptor leaks*).
+3. **Capture de Bannières (Banner Grabbing) : Sollicitation applicative pour identifier les versions des services distants.
+4. **Fermeture Sécurisée des Ressources : Implémentation de gestionnaires de contexte (with) sur les prises TCP pour éviter les fuites de descripteurs de fichiers.
 
 ## Utilisation Opérationnelle
 
